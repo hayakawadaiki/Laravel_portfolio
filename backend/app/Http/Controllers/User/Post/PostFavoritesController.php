@@ -6,6 +6,8 @@ use App\Models\Posts\Post;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use Log;
+
 class PostFavoritesController extends Controller
 {
     public function postFavorite(Request $request)

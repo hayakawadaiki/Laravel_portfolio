@@ -14,7 +14,7 @@ class PostCommentsTableSeeder extends Seeder
             PostComment::create([
                 'user_id' => mt_rand(1, 11),
                 'post_id' => mt_rand(1, 30),
-                'comment' => 'テストのコメント',
+                'comment' => 12341234123412341234,
                 'event_at' => new Carbon,
             ]);
         }

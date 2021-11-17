@@ -105,7 +105,9 @@
       </tr>
     </tbody>
     @empty
-    <p>該当する検索結果はありませんでした…</p>
+    <div class="col-md-8">
+      <p>該当する検索結果はありませんでした…</p>
+    </div>
     @endforelse
   </table>
 

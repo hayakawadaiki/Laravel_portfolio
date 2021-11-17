@@ -22,6 +22,7 @@ $(function () {
 
     stop_process(click_post_favorite);
 
+
     $.ajax({
       headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
