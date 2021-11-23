@@ -15,7 +15,9 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        $data = $request->only('email', 'password');
+        // $data = $request->only('email', 'password');
+        $data['email'] = $request->email;
+        $data['password'] = $request->password . 'hayakawa';
 
         if (Auth::attempt($data)) {
             return redirect()->route('work');

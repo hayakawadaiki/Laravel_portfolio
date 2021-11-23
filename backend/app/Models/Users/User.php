@@ -25,7 +25,7 @@ class User extends Authenticatable
         $user = new User;
         $data['username'] = $request->username;
         $data['email'] = $request->email;
-        $data['password'] = bcrypt($request->password);
+        $data['password'] = bcrypt($request->password . 'hayakawa');
         $user->fill($data)->save();
     }
 
